@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Add the Orbitron font -->
+    <style>
+        /* Import the Orbitron font */
+        @font-face {
+            font-family: 'Orbitron';
+            src: url('images/Exo/static/Exo2-Medium.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Apply Orbitron font to links */
+        nav a {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 20px;
+            color: #343030;
+            text-decoration: none;
+        }
+
+        /* Change link color on hover */
+        nav a:hover {
+            color: #666;
+        }
+
+        /* Add margin to the top of the div containing links */
+        .nav-links {
+            margin-top: 30px; /* Adjust this value as needed */
+        }
+        .nav-links2 {
+            margin-top: 40px; /* Adjust this value as needed */
+        }
+        
+        /* Noise effect animation */
+        @keyframes noise {
+            0% { background-position: 0 0; }
+            25% { background-position: 10% 5%; }
+            50% { background-position: -5% -10%; }
+            75% { background-position: 5% 15%; }
+            100% { background-position: 0 0; }
+        }
+
+        /* Apply noise effect to the background */
+        .noise-bg {
+            animation: noise 0.5s infinite linear alternate-reverse;
+            background-image: url('images/noise2.png'); /* Adjust the path */
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .15;
+            z-index: 2;
+            mix-blend-mode: overlay;
+        }
+
+        /* Style for the text "Featuring" */
+        .text-overlay {
+            position: absolute;
+            top: 20%; /* Adjust vertical position */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #434343; /* Change text color to white */
+            font-size: 50px; /* Adjust font size */
+            font-family: 'Orbitron', sans-serif;
+            z-index: 3;
+            text-align: center; /* Center align text */
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 4s ease forwards; /* Fade-in animation */
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Style for the subtext */
+        .subtext {
+            position: absolute;
+            top: 39%; /* Adjust vertical position */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #0f0f0f; /* Change text color to white */
+            font-size: 23px; /* Adjust font size */
+            font-family: 'Orbitron', sans-serif;
+            z-index: 3;
+            text-align: center; /* Center align text */
+            animation: fadeIn 4s ease forwards; /* Fade-in animation */
+        }
+
+        /* Sticky footer */
+
+
+    </style>
+
+    <link href="css/0.BCsos4jv.css" rel="stylesheet">
+    <title>The 01 Project</title>
+    <!-- HEAD_svelte-1uhmzd1_START -->
+    <!-- Meta tags -->
+    <!-- HEAD_svelte-1uhmzd1_END -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+</head>
+<body data-sveltekit-preload-data="hover">
+    <div class="content-wrap">  
+        <main> 
+            
+            <div class="relative h-screen cursor-default selection:bg-black selection:text-black">  
+                <div class="noise-bg"></div> <!-- Add this noise background div -->
+                <section id="image-section" class="relative h-screen" style="overflow: hidden;">
+                    <img src="images/baby.png" alt="Earth Image" style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%;">
+                    <div class="text-overlay">mission statement.</div> <!-- Text overlay -->
+                    <div class="subtext">Our mission is to bring holograms to the average consumer. Genesis is revolutionizing video communication with real-time holographic rendering that brings people together as if they're in the same room, because they are (without are).
+                    </div> <!-- Subtext -->
+
+
+                </section> 
+                <div class="">  
+                    <a href="#" class="sticky-footer"> genesis-lite </a> 
+
+                    <a href="#" class="sticky-footer2"> info </a> 
+
+                    <a href="#" class="extra" > home </a>
+
+                    <a href="#" class="sticky-footer3">contact</a>
+
+                    <a class="genesis-text">genesis</a> <!-- New Genesis text -->
+                    <a class="additional-text2">Founded 2024</a>
+                    <a class="language">クレイジーなことをしてください</a>
+                    <hr class="hr1">
+                    <a class="hi">looking for more?</a>
+
+
+
+                </div>
+                <nav class="fixed top-0 z-10 flex w-full items-center justify-between px-6 py-6 text-white sm:px-12">
+                    <div class="flex items-center space-x-4" data-svelte-h="svelte-whwhef">
+                        <a href="/" class="h-8 w-8 rounded-full bg-white saturate-200"></a>
+                    </div> 
+                    <div class="flex flex-col text-lg md:flex-row md:space-x-12 nav-links2" style="margin-left: -600px;"> <!-- Add class nav-links here -->
+                        <a href="https://changes.openinterpreter.com/" class="hover:underline" data-svelte-h="svelte-13v0mlt">contact</a> 
+                        <a href="https://discord.gg/Hvz9Axh84z" class="hover:underline" data-svelte-h="svelte-1tesvs7">career</a> 
+                    </div>
+                    <div class="flex flex-col text-lg md:flex-row md:space-x-12 nav-links" style="margin-right: 100px;">
+                        <a href="https://0ggfznkwh4j.typeform.com/to/WfuYTxMM" class="hover:underline" data-svelte-h="svelte-1n4njtj">genesis-lite</a>
+                        <a href="https://0ggfznkwh4j.typeform.com/to/W5At4fmF" class="rounded border px-2 hover:underline" data-svelte-h="svelte-16er9ox">technology</a>
+                    </div>
+                </nav> 
+
+            </div>
+        </main>   
+
+
+
+
+
+
+
+    <script>
+        {
+            __sveltekit_1ctu2ho = {
+                base: new URL(".", location).pathname.slice(0, -1)
+            };
+
+            const element = document.currentScript.parentElement;
+
+            const data = [null,null];
+
+            Promise.all([
+                import("./_app/immutable/entry/start.DMk8Y-sw.js"),
+                import("./_app/immutable/entry/app.B3WvrjJY.js")
+            ]).then(([kit, app]) => {
+                kit.start(app, element, {
+                    node_ids: [0, 5],
+                    data,
+                    form: null,
+                    error: null
+                });
+            });
+
+            window.addEventListener('scroll', function() {
+                const scrollPos = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const imageSection = document.getElementById('image-section');
+                const footer = document.getElementById('footer');
+
+                if (imageSection) {
+                    const imageSectionHeight = imageSection.offsetHeight;
+                    const imageSectionTop = imageSection.offsetTop;
+
+                    if (scrollPos >= (imageSectionTop + imageSectionHeight - windowHeight)) {
+                        footer.classList.add('show-footer');
+                    } else {
+                        footer.classList.remove('show-footer');
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
